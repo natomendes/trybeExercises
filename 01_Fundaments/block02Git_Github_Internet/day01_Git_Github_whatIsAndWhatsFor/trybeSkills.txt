@@ -2,5 +2,7 @@
 - Bash
 - Git
 - GitHub
+- JavaScript
 - Html
 - Css
+
