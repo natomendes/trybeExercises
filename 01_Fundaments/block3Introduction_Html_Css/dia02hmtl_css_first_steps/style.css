@@ -1,0 +1,21 @@
+* {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 6.5rem;
+    color: orange;
+}
+
+p, ul {
+    font-size: 2rem;
+    color: white;
+}
+
+ul {
+    background: rgb(155, 134, 17, 0.5);
+}
+
+.bg-color {
+    background: rgb(235, 60, 7, 0.6);
+}
