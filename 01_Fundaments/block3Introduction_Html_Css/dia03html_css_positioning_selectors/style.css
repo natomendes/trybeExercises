@@ -1,0 +1,37 @@
+div:hover {
+  border: 2px solid black;
+}
+
+:nth-child(3) {
+  background: #ff0101;
+  padding: 10px 30px;
+}
+
+h3 {
+  color: purple; 
+}
+
+:nth-child(odd) > h3 {
+  font-style: italic;
+  font-weight: 200;
+}
+
+:nth-child(4) {
+  background: #d9ff00;
+  padding: 10px 30px;
+}
+
+:nth-child(5) {
+  background: #5eff01;
+  padding: 30px;    
+}
+
+:nth-child(6) {
+  background: #091f00;
+  padding: 10px 30px;
+}
+
+:nth-child(7) {
+  background: #dbfff4;
+  padding: 10px 30px;
+}
