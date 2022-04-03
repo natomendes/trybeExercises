@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: #eee;
+}
+
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(3, 17, 65);
+  color: white;
+  padding-top: 10px;
+  text-align: center; 
+  border-bottom: 1px solid white; 
+}
+
+.menu-itens {
+  width: 100%;
+  border-top: 1px solid white;
+  background: rgb(3, 17, 65);
+}
+
+.menu-itens a {
+  color: white;
+  font-weight: 700;
+}
+
+.menu-itens ul {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-itens ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.right-panel {
+  float: right;
+  width: 25%;
+  padding: 20px;
+  background: rgb(3, 17, 65);
+  border-radius: 20px;
+  margin-top: 86px;
+  color: white;
+  font-size: 13px;
+}
+
+.right-panel img {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid white;
+}
+
+.left-panel {
+  width: 75%;
+  float: left;
+  padding: 0 80px 100px 100px;
+}
+
+.left-panel section {
+  background: rgb(3, 17, 65);
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  padding: 96px 30px 30px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.left-panel section h2 {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-size: 30px;
+}
+
+.left-panel section img {
+  float: left;
+  margin: 0 20px 20px 0;
+  border-radius: 15px 15px 0 15px;
+  border: 2px solid white;
+  width: 300px;
+}
+
+.left-panel section p {
+  font-size: 20px;
+}
+
+#claws table {
+  margin-top: 10px;
+}
+
+#claws table td {
+  width: 50%;
+  padding: 30px;
+  background: rgb(0, 0, 0, 0.3);
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+#refs {
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;  
+}
+
+#refs a {
+  color: white;
+}
+
+#refs a:hover {
+  font-style: italic;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  background: rgb(3, 17, 65);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
