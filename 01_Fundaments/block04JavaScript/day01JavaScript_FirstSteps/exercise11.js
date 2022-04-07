@@ -14,7 +14,7 @@ De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% e parcela de R$ 354,80 a deduzir 
 De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
 Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto. */
 
-const fullSalary = 4000;
+const fullSalary = 3000;
 let inssDue;
 if (fullSalary <= 1556.94) {
   inssDue = fullSalary * 0.08;
@@ -22,9 +22,11 @@ if (fullSalary <= 1556.94) {
   inssDue = fullSalary * 0.09;
 } else if ( fullSalary <= 5189.82) {
   inssDue = fullSalary * 0.11;
-} else if ( fullSalary <= 2594.92) {
+} else if ( fullSalary > 5189.82) {
   inssDue = 570.88;
 }
+
+console.log(inssDue);
 
 const salAfterInssDiscount = fullSalary - inssDue;
 
@@ -49,11 +51,6 @@ const irTable = [
     rate: 0.225,
     discount: 636.13
   },
-  {
-    salValue: 4664.68,
-    rate: 0.275,
-    discount: 869.36
-  },
 ]
 
 let irDue;
@@ -65,11 +62,15 @@ for (ir of irTable) {
   }
 }
 
+if (salAfterInssDiscount >= 4664.69) {
+  irDue = (salAfterInssDiscount * 0.275) - 869.36;
+}
+
 const liquidSalary = salAfterInssDiscount - irDue;
 
 console.log('Salario Bruto:', fullSalary.toFixed(2));
 console.log('Desconto Inss:', inssDue.toFixed(2));
-console.log('Salario após Desc. Inss:', (fullSalary - inssDue).toFixed(2));
+console.log('Salario após Desc. Inss:', salAfterInssDiscount.toFixed(2));
 console.log('Desconto Ir:', irDue.toFixed(2));
 console.log('Salario Liquido:', liquidSalary.toFixed(2));
 
