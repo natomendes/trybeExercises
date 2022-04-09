@@ -7,7 +7,7 @@ const drawSquare = (num) => {
   for (let z = 0; z < num - 1; z += 1) {
     spacing += ' ';
   }
-  console.log(spacing);
+  
   line = '*';
   let middleSpace = spacing;
   for (let i = 0; i < num; i += 2) {
