@@ -1,7 +1,7 @@
 // 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
 
 function maxValue(arrNumber) {
-  let maxNum = 0;
+  let maxNum;
   for (let i in arrNumber) {
     if (Number(i) + 1 === arrNumber.length) return maxNum;
     
