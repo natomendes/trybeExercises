@@ -75,6 +75,13 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
       }
     }
     capitalizeString('p');
+
+    function showInConsole(element) {
+      for (let el of document.querySelectorAll(element)) {
+        console.log(el);
+      }
+    }
+    showInConsole('p')
   </script>
 </body>
 
