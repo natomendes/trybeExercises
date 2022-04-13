@@ -13,6 +13,13 @@
       document.getElementById('page-title').innerText = 'Renato Mendes';
       document.getElementById('second-paragraph').innerText = 'Futuro FullStack Web Developer';
       document.getElementById('subtitle').innerText = 'Curso Trybe';
+            
+      for (let element of document.getElementsByTagName('p')) {
+        element.classList.add('teste');
+      }
+
+      document.getElementsByClassName('teste')[0].style.fontSize = '20px';
+      document.getElementsByTagName('h4')[0].style.color = 'Brown';
     </script>
   </body>
 </html>
