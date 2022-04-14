@@ -95,6 +95,16 @@
     imgElement.className = 'small-image';
     elementSection2.appendChild(imgElement);
 
+    // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+    const listValues = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+    const ulElement = document.createElement('ul');
+    for (let index in listValues) {
+      const liElement = document.createElement('li');
+      liElement.innerText = listValues[index];
+      ulElement.appendChild(liElement);
+    }
+    elementSection3.appendChild(ulElement);
+
   </script>
 </body>
 
