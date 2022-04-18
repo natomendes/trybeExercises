@@ -37,12 +37,27 @@ function createButton(nameButton, idName, pElement) {
   btn.id = idName;
   btn.innerText = nameButton;
   const parentElement = document.querySelector(pElement);
-  parentElement.appendChild(btn);
-  
+  parentElement.appendChild(btn);  
 }
 
-
 createButton('Feriados', 'btn-holiday', '.buttons-container');
+
+const btnHolidays = document.getElementById('btn-holiday');
+
+btnHolidays.addEventListener('click', function () {
+  const holidays = document.querySelectorAll('.holiday');
+
+  for (let index in holidays) {
+    if (holidays[index].style.backgroundColor === 'green') {
+      holidays[index].style.backgroundColor = 'rgb(238,238,238)';
+      holidays[index].style.color = 'rgb(119, 119, 119)';
+    } else {
+      holidays[index].style.backgroundColor = 'green';
+      holidays[index].style.color = 'white';
+    }    
+  }
+  
+})
 
 
 
