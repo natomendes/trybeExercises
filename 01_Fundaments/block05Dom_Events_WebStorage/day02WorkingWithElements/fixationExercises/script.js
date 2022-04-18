@@ -45,7 +45,3 @@ for (let element of element2.children) {
     document.querySelector('#elementoOndeVoceEsta').removeChild(element);
   }
 }
-
-
-
-
