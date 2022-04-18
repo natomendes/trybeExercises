@@ -61,7 +61,7 @@ btnHolidays.addEventListener('click', function () {
     }    
   }
   
-})
+});
 
 createButton('Sexta-feira', 'btn-friday', '.buttons-container');
 
@@ -77,6 +77,28 @@ btnFridays.addEventListener('click', () => {
     }
   }
 })
+
+const liDays = document.querySelectorAll('.day');
+
+for (let i = 0; i < liDays.length; i++) {
+  liDays[i].addEventListener('mouseover', zoomIn);
+}
+
+for (let i = 0; i < liDays.length; i++) {
+  liDays[i].addEventListener('mouseout', zoomOut);
+}
+
+function zoomIn(event) {
+  event.target.style.fontSize = '28px';
+}
+
+function zoomOut(event) {
+  event.target.style.fontSize = '20px';
+}
+
+
+
+
 
 
 
