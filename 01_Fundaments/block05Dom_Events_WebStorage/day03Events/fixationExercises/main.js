@@ -14,7 +14,6 @@ const myWebpage = document.getElementById('my-spotrybefy');
 firstLi.addEventListener('click', classSwap);
 secondLi.addEventListener('click', classSwap);
 thirdLi.addEventListener('click', classSwap);
-input.addEventListener('change', changeText);
 
 function classSwap(event) {
   document.querySelector('.tech').classList.remove('tech');
@@ -23,17 +22,27 @@ function classSwap(event) {
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
-function changeText(event) {
+input.addEventListener('change', function (event) {
   const inputText = event.target.value;
   document.querySelector('.tech').innerText = inputText;
-}
+});
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
+myWebpage.addEventListener('dblclick', (event) => {
+  window.location.replace('https://natomendes.github.io/');
+});
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+myWebpage.addEventListener('mouseover', (event) => {
+  event.target.style.color = 'red';
+})
+
+myWebpage.addEventListener('mouseout', (event) => {
+  event.target.style.color = 'white';
+})
 
 // Segue abaixo um exemplo do uso de event.target:
 
