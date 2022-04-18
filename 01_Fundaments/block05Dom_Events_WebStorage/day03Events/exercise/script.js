@@ -40,6 +40,10 @@ function createButton(nameButton, idName, pElement) {
   parentElement.appendChild(btn);  
 }
 
+createDaysOfTheWeek();
+
+createDaysOfTheMonth();
+
 createButton('Feriados', 'btn-holiday', '.buttons-container');
 
 const btnHolidays = document.getElementById('btn-holiday');
@@ -59,13 +63,23 @@ btnHolidays.addEventListener('click', function () {
   
 })
 
+createButton('Sexta-feira', 'btn-friday', '.buttons-container');
+
+const btnFridays = document.getElementById('btn-friday');
+btnFridays.addEventListener('click', () => {
+  const fridays = document.querySelectorAll('.friday');
+
+  for (let i = 0; i < fridays.length; i++) {
+    if (fridays[i].innerText === 'Sextou'){
+      fridays[i].innerText = Number(fridays[i].previousElementSibling.innerText) + 1;
+    } else {
+      fridays[i].innerText = 'Sextou';
+    }
+  }
+})
 
 
-createDaysOfTheWeek();
-
-// Escreva seu código abaixo.
 
 
-createDaysOfTheMonth();
 
 
