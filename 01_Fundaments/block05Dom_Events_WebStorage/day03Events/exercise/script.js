@@ -47,7 +47,7 @@ const btnHolidays = document.getElementById('btn-holiday');
 btnHolidays.addEventListener('click', function () {
   const holidays = document.querySelectorAll('.holiday');
 
-  for (let index in holidays) {
+  for (let index = 0; index < holidays.length; index++) {
     if (holidays[index].style.backgroundColor === 'green') {
       holidays[index].style.backgroundColor = 'rgb(238,238,238)';
       holidays[index].style.color = 'rgb(119, 119, 119)';
