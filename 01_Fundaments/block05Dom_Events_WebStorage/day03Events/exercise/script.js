@@ -76,7 +76,7 @@ btnFridays.addEventListener('click', () => {
       fridays[i].innerText = 'Sextou';
     }
   }
-})
+});
 
 const liDays = document.querySelectorAll('.day');
 
@@ -89,12 +89,33 @@ for (let i = 0; i < liDays.length; i++) {
 }
 
 function zoomIn(event) {
-  event.target.style.fontSize = '28px';
+  event.target.style.fontSize = '35px';
 }
 
 function zoomOut(event) {
   event.target.style.fontSize = '20px';
 }
+
+function createTask(task) {
+  const span = document.createElement('span');
+  span.innerText = task;
+  document.querySelector('.my-tasks').appendChild(span);
+}
+
+createTask('Cozinhar');
+
+function addColorTask(color) {
+  const div = document.createElement('div');
+  div.classList.add('task');
+  div.style.backgroundColor = color;
+  document.querySelector('.my-tasks').appendChild(div);
+}
+
+addColorTask('blue');
+
+
+
+
 
 
 
