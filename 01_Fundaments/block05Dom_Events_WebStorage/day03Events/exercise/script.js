@@ -113,6 +113,33 @@ function addColorTask(color) {
 
 addColorTask('blue');
 
+const divTask = document.querySelector('.task');
+divTask.addEventListener('click', function (event) {
+  if (event.target.classList.contains('task-selected')) {
+    event.target.classList.remove('task-selected');
+    return;
+  }
+
+  event.target.classList.add('task-selected');
+});
+
+for (let i = 0; i < liDays.length; i++) {
+  liDays[i].addEventListener('click', function (event) {
+    const taskSelected = document.querySelector('.task-selected');
+    if (event.target.style.color === 'blue') {
+      event.target.style.color = 'rgb(119,119,119)';
+      return
+    }
+    if (taskSelected !== null) {
+      event.target.style.color = taskSelected.style.backgroundColor;
+    }
+    
+  })
+}
+
+
+
+
 
 
 
