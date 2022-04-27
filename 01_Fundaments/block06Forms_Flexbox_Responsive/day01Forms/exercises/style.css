@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: rgb(93 , 96 , 99);
+  background: rgb(234 , 237 , 240);
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.6;
+}
+
+.main-header, #trybe-trip {
+  text-align: center;
+  background: rgb(246, 247, 248);
+  border: 1px solid rgb(214, 217, 220);
+  border-radius: 0.3rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-header {
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+
+#trybe-trip {
+  padding: 4rem;
+  /* font-size: 2rem; */
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.personal-info label {
+  font-style: italic;
+  margin-left: 2rem;
+}
+
+.personal-info input {
+  width: 60%;
+  padding: 0.7rem 1rem;
+  font-size: 1.6rem;
+  border: 1px solid rgb(214, 217, 220);
+}
+
+.prefered-destination {
+  margin-bottom: 3rem;
+}
+
+.prefered-destination fieldset {
+  border: none;
+}
+
+.prefered-destination legend {
+  text-align: left;
+  margin-left: 2rem;
+  /* margin-bottom: 0.3rem; */
+  font-style: italic;  
+}
+
+.destinations {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0.5rem;
+  width: 60%;
+  background: white;
+  border-radius: 0.3rem;
+  border: 1px solid rgb(214, 217, 220);
+}
+
+.destinations > div {
+  margin-right: 2rem;
+}
+
+.answer-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.answer-text label {
+  text-align: left;
+  margin-left: 2rem;
+  font-style: italic;
+  margin-bottom: 0.4rem;
+}
+
+.general-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.general-info label , .general-info input, .general-info > div {
+  margin-bottom: 0.3rem;
+}
+
+.general-info input[type=date] {
+  padding: 0.3rem 0.7rem;
+  font-size: 1.6rem;
+  border: 1px solid rgb(214, 217, 220);
+  border-radius: 0.3rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: left;
+}
+
+.buttons button {
+  margin-right: 2rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid rgb(214, 217, 220);
+  color: rgb(93 , 96 , 99);
+  cursor: pointer;
+}
+
+.buttons button:disabled {
+  opacity: 0.2;
+}
+
+.buttons button:disabled:hover {
+  border: 1px solid rgb(214, 217, 220);
+  cursor: not-allowed;
+}
+
+.buttons button:hover {
+  border: 1px solid rgb(140, 140, 140);
+}
