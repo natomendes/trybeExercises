@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(64, 164, 155);
+}
+
+.main-header {
+  text-align: center;
+}
+
+#trybe-trip {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.destinations {
+  display: flex;
+  justify-content: space-around;  
+}
+
+fieldset legend {
+  color: #9e9e9e;
+}
+
+fieldset {
+  border: #9e9e9e 1px solid;
+}
+
+form section {
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}

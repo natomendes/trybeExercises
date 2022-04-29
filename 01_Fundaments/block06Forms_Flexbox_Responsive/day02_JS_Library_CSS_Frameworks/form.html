@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrybeTrip</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="materialize-v1.0.0/materialize/css/materialize.css"
+    media="screen,projection">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+</head>
+
+<body>
+  <header class="main-header">
+    <h1>TrybeTrip</h1>
+  </header>
+  <form action="" method="get" id="trybe-trip">
+
+    <section class="personal-info">
+      <div class="input-field">
+        <label for="full-name">Nome Completo</label>
+        <input type="text"name="full-name" id="full-name">
+      </div>
+      <div class="input-field">
+        <label for="email">E-mail</label>
+        <input type="email" minlength="10" maxlength="50" name="email" id="email" required>
+      </div>
+    </section>
+
+    <section class="prefered-destination">
+
+      <fieldset>
+        <legend>Destino Preferido</legend>
+        <div class="destinations" id="destinations">
+          <div>
+            <label for="option-1">
+              <input type="radio" name="destination" id="option-1" required>
+              <span>Cidade</span>
+            </label>
+          </div>
+          <div>
+            <label for="option-2">
+              <input type="radio" name="destination" id="option-2">
+              <span>Campo</span>
+            </label>
+          </div>
+          <div>
+            <label for="option-3">
+              <input type="radio" name="destination" id="option-3">
+              <span>Praia</span>
+            </label>
+          </div>
+          <div>
+            <label for="option-4">
+              <input type="radio" name="destination" id="option-4">
+              <span>Montanhas</span>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+    </section>
+
+    <section class="answer-text">
+      <div class="input-field">
+        <label for="text-area">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <textarea class="materialize-textarea" name="text-area" id="text-area" cols="30" rows="10"></textarea>
+      </div>
+    </section>
+
+    <section class="date-picker">
+      <label for="trip-date">
+        <input type="text" class="datepicker" name="trip-date" id="trip-date">
+        <span>Qual a melhor data para realizar sua viagem?</span>
+      </label>
+    </section>
+
+    <section class="general-info">
+      <div>
+        <label for="terms-of-use">
+          <input type="checkbox" name="terms-of-use" id="terms-of-use">
+          <span>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos
+            futuros.</span>
+        </label>
+      </div>
+      <div>
+        <label for="oportunities">
+          <input type="checkbox" name="oportunities" id="oportunities">
+          <span>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</span>
+        </label>
+      </div>
+    </section>
+
+    <section class="buttons">
+      <button class="btn waves-effect waves-light" type="submit" id="submit-form" disabled>
+        Enviar<i class="material-icons right">send</i>
+      </button>
+      <button class="btn red" type="reset" id="reset-form">
+        Resetar Formulário<i class="material-icons right">clear</i>
+      </button>
+    </section>
+
+  </form>
+  <script src="materialize-v1.0.0/materialize/js/materialize.js"></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
