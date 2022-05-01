@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+
+.main-header {
+  background-color: rgb(50, 52, 51);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(235, 238, 235);
+}
+
+.main-header h3 {
+  color: rgb(152, 150, 148);
+  text-decoration: underline;
+}
+
+.header-img {
+  width: 50px;
+}
+
+.title-section {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px 20px;
+}
+
+.tec-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  width: 570px;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.tec-gallery > div {
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 15px;
+  box-shadow: 2px 2px rgb(181, 181, 181);
+  transition: all ease-out 150ms;
+}
+
+.tec-gallery > div:hover {
+  background-color: rgb(234, 234, 234);
+}
+
+.line-1:hover {
+  transform: translateY(-5px);
+  transition: ease-in 200ms;
+}
+
+.line-2:hover {
+  transform: translateY(5px);
+  transition: ease-in 200ms;
+}
+
+.tec-gallery hr {
+  margin-top: 20px;
+  width: 180px;
+}
+
+.gallery-img {
+  width: 150px;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;  
+}
