@@ -1,0 +1,112 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 2rem;
+}
+
+article {
+  padding: 1rem 2rem;
+}
+
+article p {
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  max-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+figure {  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1 1 40%;
+}
+
+figure img {
+  border-radius: 1rem;
+}
+
+figcaption {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  section {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  article {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  main, header, article {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  figure {
+    flex: 1 1 30%;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+  figure {
+    flex: 1 1 60%;
+  }
+}
