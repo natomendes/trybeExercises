@@ -47,9 +47,7 @@ const totalStudents = Object.values(allLessons).reduce((total ,key) => {
 
 console.log(`Numero total de estudantes: ${totalStudents}`);
 
-const valueByIndex = (obj, ind) => Object.values(obj).filter((value, index) => {
-  return ind === index;
-});
+const valueByIndex = (obj, ind) => Object.values(obj).filter((value, index) => ind === index);
 
 console.log(valueByIndex(lesson1, 0).toString());
 
