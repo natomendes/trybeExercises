@@ -31,16 +31,24 @@ const allLessons = {
 //     return total;
 //   }, 0);
 
-// const createReport = (lessons, keyTeacher, teacherName) => Object.values(lessons)
-// .filter((object) => {
-//   return object[keyTeacher] === teacherName;
-// })
-// .reduce((finalObject, currentObject) => {
-//   finalObject.aulas.push(currentObject.materia);
-//   return finalObject;
-// }, { professor: teacherName, aulas: [], estudantes: totalStudentsPerKey(allLessons, keyTeacher, teacherName)});
+// const createReport = (lessons, keyTeacher, teacherName) =>
+//   Object.values(lessons)
+//     .filter((object) => {
+//       return object[keyTeacher] === teacherName;
+//     })
+//     .reduce(
+//       (finalObject, currentObject) => {
+//         finalObject.aulas.push(currentObject.materia);
+//         return finalObject;
+//       },
+//       {
+//         professor: teacherName,
+//         aulas: [],
+//         estudantes: totalStudentsPerKey(allLessons, keyTeacher, teacherName),
+//       }
+//     );
 
-// console.log(createReport(allLessons, 'professor', 'Maria Clara'))
+// console.log(createReport(allLessons, "professor", "Maria Clara"));
 
 const createReport = (lessons, keyTeacher, teacherName) => {
   try {
