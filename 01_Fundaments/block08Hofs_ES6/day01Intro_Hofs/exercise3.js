@@ -5,7 +5,7 @@ const mapStudentScore = (rightAnswers, studentAnswers) => (
   studentAnswers.map((value, index) => {
     if (value === 'N.A') return 0;
     if (value === rightAnswers[index]) return 1;
-    return 0.5;
+    return -0.5;
   })
 )
 
