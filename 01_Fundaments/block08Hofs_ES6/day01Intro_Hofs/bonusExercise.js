@@ -49,13 +49,11 @@ const gameActions = {
   },
   mageTurn: (func) => {
     const turnDamage = func();
-    if (isNaN(turnDamage.damage)) {
-      console.log(turnDamage.damage)
-    } else {
+    if (!isNaN(turnDamage.damage)) {
       dragon.healthPoints -= turnDamage.damage;
-      mage.mana -= turnDamage.manaComsumption;
-      mage.damage = turnDamage.damage;
     }
+    mage.damage = turnDamage.damage;
+    mage.mana -= turnDamage.manaComsumption;
   },
   dragonTurn: (func) => {
     const turnDamage = func();
