@@ -23,7 +23,7 @@ console.log(verifyAges(people, 18));
 console.log(people.sort((a, b) => a.age - b.age));
 // ordem decrescente
 console.log(people.sort((a, b) => b.age - a.age));
-
+// ordenado por nome
 console.log(people.sort((a, b) => {
   if (a.name > b.name) {
     return 1;
