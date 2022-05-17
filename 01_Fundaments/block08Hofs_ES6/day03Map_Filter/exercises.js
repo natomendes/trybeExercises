@@ -110,4 +110,17 @@ const oldBooksOrdered = () => {
   .sort((a, b) => a.releaseYear - b.releaseYear);
 }
 
-console.log(oldBooksOrdered());
+// console.log(oldBooksOrdered());
+
+// 🚀 5 - Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
+
+const fantasyOrScienceFictionAuthors = (func) => (
+  func().map((book) => book.author.name)
+  .sort((a, b) => {
+    if (a < b) return -1
+    if (a > b) return 1
+    return 0;
+  })
+);
+
+console.log(fantasyOrScienceFictionAuthors(fantasyOrScienceFiction));
