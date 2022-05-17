@@ -131,4 +131,21 @@ const oldBooks = (func) => (
   func().map((book) => book.name)
 );
 
-console.log(oldBooks(oldBooksOrdered));
+// console.log(oldBooks(oldBooksOrdered));
+
+// 🚀 7 - Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
+// Dica: cada inicial termina com um ponto.
+
+const nameBeginsWith3Initials = (bookObj) => (
+  bookObj.split(' ').filter((el) => (
+    el.length === 2 && el.endsWith('.')
+  )).length === 3
+)
+
+const authorWith3DotsOnName = (func) => (
+  books.filter((book) =>
+    func(book.author.name)).map((book) =>
+      book.name)
+)
+
+console.log(authorWith3DotsOnName(nameBeginsWith3Initials))
