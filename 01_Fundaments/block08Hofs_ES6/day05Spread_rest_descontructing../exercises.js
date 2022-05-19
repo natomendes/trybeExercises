@@ -124,8 +124,15 @@ const ships = [
 const shipLength = ({name, length, measurementUnit}) => 
   `${name} is ${length} ${measurementUnit} long`;
 
-console.log(shipLength(ships[0])); // 'Titanic is 269.1 meters long'
-console.log(shipLength(ships[1])); // 'Queen Mary 2 is 1132 feet long'
-console.log(shipLength(ships[2])); // 'Yamato is 256 meters long'
+// console.log(shipLength(ships[0]));
+// console.log(shipLength(ships[1]));
+// console.log(shipLength(ships[2]));
 
 // 8 - Escreva uma função greet que, dado o nome de uma pessoa, retorna uma mensagem de cumprimento:
+
+// escreva greet abaixo
+const greet = (nameStr, greeting = 'Hi') => `${greeting} ${nameStr}`;
+
+// console.log(greet('John'));
+// console.log(greet('John', 'Good morning'));
+// console.log(greet('Isabela', 'Oi'));
