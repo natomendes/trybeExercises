@@ -15,6 +15,7 @@ const jobInfos = {
 const employee = {...user, ...jobInfos};
 // console.log(employee);
 
+
 // 2 - Com o objeto em mãos, imprima no console uma frase utilizando os dados do objeto criado anteriormente. Para isso, utilize a desestruturação de objetos em conjunto com template literals.
 // "Hi, my name is Maria, I'm 21 years old and I'm Brazilian. I work as a Software engineer and my squad is RLL-Rocket Landing Logic"
 const printMessage = () => {
@@ -24,3 +25,38 @@ I work as a ${profession} and my squad is ${squadInitials}-${squad}`
 }
 
 // console.log(printMessage())
+
+
+// 3 - Produza o mesmo resultado do código, porém utilizando o array destructuring para recolher a função e a saudação.
+const saudacoes = ['Olá', (saudacao) => console.log(saudacao)];
+// saudacoes[1](saudacoes[0]); Olá
+
+const [ message , printSalutation ] = saudacoes;
+// Produza o mesmo resultado acima, porém utilizando array destructuring
+// printSalutation(message);
+
+
+// 4 - A seguir, temos alguns valores que estão descritos em variáveis incoerentes. Através da desestruturação de arrays, corrija os valores das variáveis.
+
+let comida = 'gato';
+let animal = 'água';
+let bebida = 'arroz';
+
+// Utilizando array destructuring, faça com que os valores apareçam nas variáveis correspondentes ao seu verdadeiro tipo
+
+const array = [comida, animal, bebida];
+
+[ animal, bebida, comida ] = array
+
+console.log(comida, animal, bebida); // arroz gato água
+
+// 5 - array abaixo possui alguns números que não condizem com o conteúdo que ele deveria possuir. Através de array destructuring, faça com que existam apenas números pares na variável numerosPares.
+
+let numerosPares = [1, 3, 5, 6, 8, 10, 12];
+
+const [ , , , a, b, c, d ] = numerosPares;
+
+numerosPares = [a, b, c, d]
+// Utilize array destructuring para produzir o resultado esperado pelo console.log abaixo
+console.log(numerosPares); // [6, 8, 10, 12];
+
