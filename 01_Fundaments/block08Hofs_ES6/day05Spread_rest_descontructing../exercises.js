@@ -74,5 +74,28 @@ const filterPeople = () => people.filter(({bornIn, nationality}) => (
   nationality === 'Australian' && bornIn > 1900 && bornIn <= 2000
 ))
 
-console.log(filterPeople());
+// console.log(filterPeople());
 
+// 5 - Escreva a função swap, que dado um array de 3 elementos, retorna um novo array com o primeiro e terceiro elementos trocados. Detalhe: você precisa fazer essa função gastando 1 linha só:
+const myList = [1, 2, 3];
+
+// escreva swap abaixo
+
+const swapFirstLast = ([a, b, c]) => [c, b, a]; 
+
+// console.log(swapFirstLast(myList))
+
+// 6 - Suponha que você esteja lidando com carros e, da forma como o problema lhe foi entregue, cada carro é modelado como um array. Porém, essa modelagem está baixo nível. Cria uma função toObject que, dada uma lista, retorna um objeto representando o carro:
+
+const palio = ['Palio', 'Fiat', 2019];
+const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
+const chiron = ['Chiron', 'Bugatti', 2016];
+
+// escreva toObject abaixo
+const toObject = ([modelo, marca, ano]) => ({
+  modelo,
+  marca,
+  ano
+});
+
+console.log(toObject(palio))
