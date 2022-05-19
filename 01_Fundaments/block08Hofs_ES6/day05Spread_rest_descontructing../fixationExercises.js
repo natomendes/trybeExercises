@@ -48,15 +48,33 @@ const array = [comida, animal, bebida];
 
 [ animal, bebida, comida ] = array
 
-console.log(comida, animal, bebida); // arroz gato água
+// console.log(comida, animal, bebida); // arroz gato água
 
 // 5 - array abaixo possui alguns números que não condizem com o conteúdo que ele deveria possuir. Através de array destructuring, faça com que existam apenas números pares na variável numerosPares.
 
 let numerosPares = [1, 3, 5, 6, 8, 10, 12];
 
-const [ , , , a, b, c, d ] = numerosPares;
+const [ , , , ...rest ] = numerosPares;
 
-numerosPares = [a, b, c, d]
+
+numerosPares = [...rest]
 // Utilize array destructuring para produzir o resultado esperado pelo console.log abaixo
-console.log(numerosPares); // [6, 8, 10, 12];
+// console.log(numerosPares); 
 
+// 6- Do jeito que está, quando passamos person para a função GetNationality o retorno é João is undefined. Ajuste a função GetNationality para que a chamada GetNationality(person) retorne João is Brazilian.
+
+const getNationality = ({ firstName, nationality = 'Brazilian' }) => `${firstName} is ${nationality}`;
+
+const person = {
+  firstName: 'João',
+  lastName: 'Jr II',
+};
+
+const otherPerson = {
+  firstName: 'Ivan',
+  lastName: 'Ivanovich',
+  nationality: 'Russian',
+};
+
+console.log(getNationality(otherPerson)); // Ivan is Russian
+console.log(getNationality(person));
