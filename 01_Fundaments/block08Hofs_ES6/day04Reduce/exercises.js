@@ -136,7 +136,7 @@ const studentAverage = () => (
   }))
 );
 
-console.log(studentAverage())
+// console.log(studentAverage())
 
 const expected = [
   { name: 'Pedro Henrique', average: 7.8 },
