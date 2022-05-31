@@ -2,9 +2,9 @@
   "name": "block01jsasync_callbacks",
   "version": "1.0.0",
   "description": "",
-  "main": "exercise1 copy 2.js",
+  "main": "../block01JSAsync_Callbacks/",
   "scripts": {
-    "test": "Jest"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
