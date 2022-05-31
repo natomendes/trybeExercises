@@ -133,7 +133,7 @@ const shipLength = ({name, length, measurementUnit}) =>
 // escreva greet abaixo
 const greet = (nameStr, greeting = 'Hi') => `${greeting} ${nameStr}`;
 
-// console.log(greet('John'));
+console.log(greet('John'));
 // console.log(greet('John', 'Good morning'));
 // console.log(greet('Isabela', 'Oi'));
 
