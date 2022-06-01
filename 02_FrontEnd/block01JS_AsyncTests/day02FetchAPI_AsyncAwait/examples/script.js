@@ -29,7 +29,6 @@ const languagesList = document.getElementById('languages-used-by');
 
 usoJSONPorque.muitasEmpresasUsam.map((empresa) => {
   const newLi = document.createElement('li');
-  console.log(empresa);
   newLi.innerText = empresa;
   corporationsList.appendChild(newLi);
 });
