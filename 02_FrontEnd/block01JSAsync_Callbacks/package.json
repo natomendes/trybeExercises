@@ -1,0 +1,15 @@
+{
+  "name": "block01jsasync_callbacks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "../block01JSAsync_Callbacks/",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}
