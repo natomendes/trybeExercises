@@ -1,0 +1,21 @@
+.pokemon-content {
+  display: flex;
+  background-color: #4881eb;
+  flex: 1 30%;
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 5px 10px #888;
+  color: white;
+  font-weight: 700;
+}
+
+.pokemon-content:hover {
+  background-color: #3b74dd;
+}
+
+.poke-info {
+  text-align: center;
+  line-height: 20px;
+}
