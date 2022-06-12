@@ -6,9 +6,11 @@
   padding: 10px;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 5px 5px 10px #888;
+  box-shadow: 3px 3px 10px #444;
   color: white;
   font-weight: 700;
+  max-width: 300px;
+  margin: 10px 30px;
 }
 
 .pokemon-content:hover {

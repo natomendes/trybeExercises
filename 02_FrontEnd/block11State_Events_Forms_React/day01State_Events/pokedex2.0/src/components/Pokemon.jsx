@@ -15,7 +15,7 @@ export default class Pokemon extends Component {
         <div className="poke-info">
           <p>{name}</p>
           <p>{type}</p>
-          <p>Average weight {value}{measurementUnit}</p>
+          <p>{`Average weight: ${value}${measurementUnit}`}</p>
         </div>
         <div>
           <img src={image} alt="pokemon image" />
