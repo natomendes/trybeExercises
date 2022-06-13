@@ -1,6 +1,5 @@
 import './css/App.css';
 import Pokedex from './components/Pokedex';
-import FilterButtons from './components/FilterButtons';
 import data from './data';
 import React, { Component } from "react";
 
@@ -18,13 +17,20 @@ export default class App extends Component  {
       filterOption: optionSelected,
     })
   }
+  
+  handleFilterPoke = () => {
+    const { filterOption } = this.state;
+    return filterOption === 'all'
+    ? data
+    : data.filter(({ type }) => type === filterOption);
+  }
+
   render() {
     const { filterOption } = this.state;
 
     return (
       <div className='App'>
-        <Pokedex pokemons={data} filter={filterOption} />
-        <FilterButtons setFilterProp={this.setFilterProp}/>
+        <Pokedex pokemons={this.handleFilterPoke()} setFilterProp={this.setFilterProp}/>
       </div>
     )
   }
